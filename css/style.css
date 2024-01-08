@@ -304,3 +304,8 @@ footer .social-icons a:hover,
 footer .footer-links a:hover {
    color: #E93B81;
 }
+
+.flags{
+   display: flex;
+   align-items: center;
+}

@@ -19,6 +19,10 @@
    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
       <div class="container">
         <a class="navbar-brand logo-text" href="#">Rent A Car</a>
+        <div class="flags">
+         <img class="nav-link flag" src="img/Englishfl.jpg" alt="" onclick="translateMe('eng')" width="20" height="30">
+         <img class="nav-link flag" src="img/Greekfl.jpg" alt="" onclick="translateMe('gr')" width="20" height="30">
+       </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -49,11 +53,6 @@
              <li>
                
              </li>
-             <div class="flags">
-               <img class="nav-link" class="nav-link" src="img/Englishfl.jpg" alt="" onclick="translateMe('eng')" width="20" height="30">
-               <img class="nav-link" src="img/Greekfl.jpg" alt="" onclick="translateMe('gr')" width="20" height="30">
-             </diV>
-              
           </ul>
         </div>
       </div>
@@ -126,14 +125,21 @@
       </div>
    </section>
 
+   <div class="row">
+      <div class="col-12 section-intro">
+         <h1>Places To Visit</h1>
+         <div class="hline"></div>
+      </div>
+   </div>
+
    <section id="portfolio" class="row g-0 py-0">
       <div class="col-lg-4 col-sm-6">
          <div class="portfolio-item">
                <img src="img/p1.jpg" alt="">
                <div class="portfolio-overlay">
                   <div>
-                     <h3>Project title</h3>
-                     <h6>Project subtite</h6>
+                     <h3>Molivos </h3>
+                     <h6>North Lesbos</h6>
                   </div>
                </div>
          </div>
@@ -143,8 +149,8 @@
                <img src="img/p2.jpg" alt="">
                <div class="portfolio-overlay">
                   <div>
-                     <h3>Project title</h3>
-                     <h6>Project subtite</h6>
+                     <h3>Agiasos</h3>
+                     <h6>Central Lesbos</h6>
                   </div>
                </div>
          </div>
@@ -154,8 +160,8 @@
                <img src="img/p3.jpg" alt="">
                <div class="portfolio-overlay">
                   <div>
-                     <h3>Project title</h3>
-                     <h6>Project subtite</h6>
+                     <h3>Plomari</h3>
+                     <h6>South Lesbos</h6>
                   </div>
                </div>
          </div>
@@ -261,6 +267,13 @@
          </div>
       </div>
    </section>
+
+   <div class="row">
+      <div class="col-12 section-intro">
+         <h1>Our Cars</h1>
+         <div class="hline"></div>
+      </div>
+   </div>
 
    <section id="team" class="row g-0 py-0 text-center">
       <div class="col-lg-3 col-sm-6 team-member">
@@ -407,7 +420,7 @@
          </div>
       </div>
    </section>
-
+<!-- 
    <section id="clients" class="bg-light">
       <div class="container">
          <div class="row gy-4">
@@ -431,7 +444,15 @@
             </div>
          </div>
       </div>
-   </section>
+   </section> -->
+
+
+   <div class="row">
+      <div class="col-12 section-intro">
+         <h1>Contact Details</h1>
+         <div class="hline"></div>
+      </div>
+   </div>
 
    <section id="contact">
       <div class="container">
@@ -462,7 +483,7 @@
       </div>
    </section>
 
-   <section id="cta" class="py-5">
+   <!-- <section id="cta" class="py-5">
       <div class="container py-4">
          <div class="row justify-content-center">
             <div class="col-md-6">
@@ -473,7 +494,9 @@
             </div>
          </div>
       </div>
-   </section>
+   </section> -->
+
+   <div class="footer-bottom"></div>
 
    <footer>
       <div class="footer-top">
@@ -552,10 +575,6 @@
 
 
       function translateMe(lang){
-         console.log("i am in",lang);
-         console.log("-->",window.location.hash);
-
-
          if (lang === "gr"){
             main.textContent = language.gr.main;
             mainSecondary.textContent = language.gr.mainSecondary;

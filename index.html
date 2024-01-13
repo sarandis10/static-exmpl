@@ -23,32 +23,32 @@
          <img class="nav-link flag" src="img/Englishfl.jpg" alt="" onclick="translateMe('eng')" width="20" height="30">
          <img class="nav-link flag" src="img/Greekfl.jpg" alt="" onclick="translateMe('gr')" width="20" height="30">
        </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="closeme" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
 
             <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
+              <a class="nav-link" href="#home" onclick="collapse()">Home</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="#services">Services</a>
+               <a class="nav-link" href="#services" onclick="collapse()">Services</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="#portfolio">Portfolio</a>
+               <a class="nav-link" href="#portfolio" onclick="collapse()">Portfolio</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="#features">Features</a>
+               <a class="nav-link" href="#features" onclick="collapse()">Features</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="#team">Cars</a>
+               <a class="nav-link" href="#team" onclick="collapse()">Cars</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="#testimonials">Testimonials</a>
+               <a class="nav-link" href="#testimonials" onclick="collapse()">Testimonials</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link" href="#contact">Contact</a>
+               <a class="nav-link" href="#contact" onclick="collapse()">Contact</a>
              </li>
              <li>
                
@@ -585,6 +585,14 @@
          }
       };
 
+      function collapse (){
+         var navbarNav =  document.getElementById('navbarNav');
+         console.log(navbarNav);
+         if (navbarNav) {
+            var closeme =  document.getElementById('closeme');
+            closeme.click()
+         }
+      }
 
     </script>
     
